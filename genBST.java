@@ -9,6 +9,8 @@
  */
 class Solution {
     public List<TreeNode> generateTrees(int n) {
+        if(n==0)
+            return new ArrayList();
         return genTrees(1,n);
         
     }
